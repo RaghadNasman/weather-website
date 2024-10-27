@@ -1,0 +1,20 @@
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:992px) {
+    nav .navbar-collapse {
+        background-color: #262936;
+    }
+
+    .navbar-nav .nav-link {
+        border-radius: 0 !important;
+        border: none !important;
+    }
+
+    
+   
+
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:567px) {}

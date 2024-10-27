@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- media -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center" href="#">
+                <img src="images/logo@2x.png" class="object-fit-cover me-2" width="60" alt="Weather">
+                <div>
+                    <span class="d-block fs-6">Weather</span>
+                    <span class="nav-span d-block text-secondary">tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse rounded-3 p-3" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1 rounded-pill active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1 rounded-pill" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1 rounded-pill" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1 rounded-pill">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1 rounded-pill">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="search-box d-flex p-2 rounded-pill mb-5">
+                <input type="search" class="form-control text-white bg-transparent border-0 shadow-none" name="search"
+                    id="search" placeholder="Find your location...">
+                <button class="text-white border-0 outline-none rounded-pill">Find</button>
+            </div>
+
+
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span id="currentDay">Thursday</span>
+                            <span id="currentDate">7Octoper</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="py-3 text-gray fs-5" id="country"></p>
+                        <h2 class="card-title text-white fw-semibold"><span id="currentTem">31.6</span><sup>o</sup>C</h2>
+                        <img id="currentImg" src="" width="100" alt="">
+                        <span class="status" id="currentStatus">Sunny</span>
+                        <div class="d-flex gap-2">
+                            <div>
+                                <img src="images/icon-umberella.png" alt="">
+                                <small class="text-gray"><span id="humidity">20</span>%</small>
+                            </div>
+                            <div>
+                                <img src="images/icon-wind.png" alt="">
+                                <small class="text-gray"><span id="windSpeed">15</span>km/h</small>
+                            </div>
+                            <div>
+                                <img src="images/icon-compass.png" alt="">
+                                <small class="text-gray"><span id="windDirection">Est</span></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-header" id="nextDay1">
+                        Thursday
+                    </div>
+                    <div class="card-body">
+                        <img id="day1Img" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="my-4" width="50" alt="">
+                        <h5 class="card-title text-white fw-semibold fs-5 mb-1"><span
+                                id="maxTemp1">34.2</span><sup>o</sup>C</h5>
+                        <p class="text-gray mb-5"><span id="minTemp1">21.9</span><sup>o</sup></p>
+                        <span class="status" id="status1">Sunny</span>
+
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-header" id="nextDay2">
+                        Thursday
+                    </div>
+                    <div class="card-body">
+                        <img id="day2Img" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="my-4" width="50" alt="">
+                        <h5 class="card-title text-white fw-semibold fs-5 mb-1"><span
+                                id="maxTemp2">34.2</span><sup>o</sup>C</h5>
+                        <p class="text-gray mb-5"><span id="minTemp2">21.9</span><sup>o</sup></p>
+                        <span class="status" id="status2">Sunny</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-lg-7">
+                    <div class="search-box d-flex p-2 rounded-pill">
+                        <input type="search" class="form-control text-white bg-transparent border-0 shadow-none"
+                            name="search" id="search" placeholder="Enter your email to subscribe...">
+                        <button class="text-white border-0 outline-none rounded-pill">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="social-links col-12 col-lg-4">
+                    <div class="d-flex gap-2">
+
+                        <a class="d-flex align-items-center justify-content-center rounded-circle" href="#"><i
+                                class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="d-flex align-items-center justify-content-center rounded-circle" href="#"><i
+                                class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="d-flex align-items-center justify-content-center rounded-circle" href="#"><i
+                                class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a class="d-flex align-items-center justify-content-center rounded-circle" href="#"><i
+                                class="fa-brands fa-pinterest"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

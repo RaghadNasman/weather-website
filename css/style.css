@@ -1,0 +1,118 @@
+/* global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.text-gray {
+    color: #bfc1c8;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Prompt", sans-serif;
+}
+.navbar-nav .nav-link.active,
+nav ul li .nav-link:hover {
+    border-color: #009ad8;
+    color: #009ad8;
+} 
+nav {
+    background-color: #1e202b;
+}
+nav .nav-span {
+    font-size: 14px;
+}
+.navbar-nav .nav-link ,
+nav .navbar-collapse .nav-link{
+    font-size: 14px;
+    border: 2px solid transparent;
+    color: white;
+    text-align: center;
+} 
+
+section {
+    background: url("../images/banner.png") #1e202b no-repeat;
+    background-size: contain;
+}
+
+.search-box {
+    background-color: #1e202b;
+}
+.search-box input{
+    font-size: 14px;
+}
+.search-box input::placeholder {
+    color: lightgray;
+}
+
+.search-box button {
+    background-color: #009ad8;
+    padding: 12px 35px;
+}
+.card-group .card .card-header {
+    color: #bfc1c8;
+    border-bottom: none;
+}
+.card-group .card:nth-child(1) .card-header,
+.card-group .card:nth-child(3) .card-header {
+    background-color: #2D303D;
+}
+.card-group .card:nth-child(1),
+.card-group .card:nth-child(3) {
+    background-color: #323544;
+}
+.card-group .card:nth-child(2) .card-header {
+    background-color: #222530;
+}
+.card-group .card:nth-child(2) {
+    background-color: #262936;
+}
+
+.card-group .card h2.card-title {
+    font-size: 4rem;
+}
+.card-group .card .status {
+    display: block;
+    color: #009ad8;
+}
+
+footer {
+    background-color: #262936;
+}
+
+footer .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #009ad8;
+    background-color: #1E202B;
+    transition: .3s;
+}
+footer .social-links a:hover {
+    background-color: #009ad8;
+    color: white;
+}
+/* .form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: darkcyan !important;
+}
+
+.fa-trash-can:hover {
+    animation: fa-shake 2s 1 linear;
+}
+
+.product-img-container{
+    height: 150px;
+    overflow: hidden;
+} */
